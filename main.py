@@ -1,0 +1,14 @@
+from sensor import read_distance
+from logger import save_readings
+
+NUM_READINGS = 10
+
+
+def main():
+    readings = [read_distance() for _ in range(NUM_READINGS)]
+    save_readings(readings)
+    print(f"Saved {len(readings)} readings to readings.csv")
+
+
+if __name__ == "__main__":
+    main()
