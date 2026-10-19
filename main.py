@@ -1,7 +1,7 @@
 from sensor import read_distance
 from logger import save_readings
 
-NUM_READINGS = 10
+NUM_READINGS = 20
 
 
 def main():
